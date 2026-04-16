@@ -19,3 +19,24 @@ CountVectorizer - Text feature extraction
 MultinomialNB - Classification algorithm
 train_test_split - Data splitting utility
 accuracy_score - Model evaluation metric
+
+## How It Works
+Data Loading: Reads news data from CSV file
+Vectorization: Converts text into a numerical feature matrix using word counts
+Train-Test Split: Divides data into training (70%) and testing (30%) sets
+Model Training: Trains Multinomial Naive Bayes on training data
+Evaluation: Calculates accuracy on test set
+Prediction: Accepts user input and predicts whether news is real or fake
+
+## Model Details
+Algorithm: Multinomial Naive Bayes
+Feature Extraction: CountVectorizer (Bag of Words)
+Train-Test Ratio: 70-30 split
+Random State: 42 (for reproducibility)
+## Future Improvements
+Add cross-validation for better model evaluation
+Implement additional features (TF-IDF, word embeddings)
+Support for multiclass classification
+Model persistence (save/load trained models)
+Web interface for easier interaction
+Add confidence scores for predictions
